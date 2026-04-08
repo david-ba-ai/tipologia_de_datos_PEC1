@@ -20,10 +20,4 @@ La ejecución más simple es:
 uv run python src/yahoo_finance_scraper.py
 ```
 
-Si necesitas ajustar el tamaño del universo o el comportamiento de las peticiones, puedes usar parámetros como `--min-market-cap`, `--limit`, `--range`, `--interval`, `--request-delay`, `--request-jitter` y `--max-retries`. El script guarda el CSV en la carpeta `csv/` si no se indica otra ruta.
-
-El repositorio incluye también un informe extenso en PDF y un diagrama SVG del flujo del scraping dentro de la carpeta `pdf/`. La sintaxis del código puede validarse con:
-
-```bash
-.\.venv\Scripts\python.exe -m compileall src
-```
+Si se necesita ajustar el tamaño del universo o el comportamiento de las peticiones, puede usarse parámetros como `--min-market-cap`, `--limit`, `--range`, `--interval`, `--request-delay`, `--request-jitter` y `--max-retries`. El script guarda el CSV en la carpeta `csv/` si no se indica otra ruta.

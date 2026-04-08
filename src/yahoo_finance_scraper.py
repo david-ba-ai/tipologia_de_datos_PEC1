@@ -710,8 +710,8 @@ def main() -> None:
     )
     screener_companies = parse_companies_from_html(screener_html)
     if not screener_companies:
-        raise RuntimeError("No se han encontrado companias en el screener.")
-    log_company_symbols("Simbolos extraidos del screener", screener_companies)
+        raise RuntimeError("No se han encontrado compañías en el screener.")
+    log_company_symbols("Símbolos extraídos del screener", screener_companies)
 
     companies = [company for company in screener_companies if company.market_cap >= args.min_market_cap]
     companies.sort(key=lambda company: company.market_cap, reverse=True)
